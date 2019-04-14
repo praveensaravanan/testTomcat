@@ -1,0 +1,23 @@
+<web-app>
+	
+	<servlet>
+		<servlet-name>servletForwardToAnotherResource</servlet-name>
+		<servlet-class>servletForwardToAnotherResource</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>servletForwardToAnotherResource</servlet-name>
+		<url-pattern>/requestDispatcherForward/servletForwardToAnotherResource</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>servletForwardToJSP</servlet-name>
+		<servlet-class>servletForwardToJSP</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>servletForwardToJSP</servlet-name>
+		<url-pattern>/requestDispatcherForward/servletForwardToJSP</url-pattern>
+	</servlet-mapping>
+
+</web-app>
