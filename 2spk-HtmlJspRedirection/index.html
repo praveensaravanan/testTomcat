@@ -1,0 +1,24 @@
+<b>In index.html</b></br>
+By default tomcat will take index.html</br>
+
+<a href="dummyHTML">click here</a> (href="dummyHTML") to redirect to another HTML.Redirected to the index.html present in the dummyHTML folder. <br>
+Note:</br>
+The href is dummyHTML and not /dummyHTML </br>
+/ will point to the root directory next to the webapps folder.So tomcat will search for another app inside webapps with the name dummyHTML when you use /dummyHTML.</br>
+For understanding <a href="/dummyHTML">click here</a> and watch the URL <br><br>
+
+<a href="dummyHTML.html"> click here </a> (href="dummyHTML.html") to move to dummyHTML.html present in the same directory<br><br>
+
+<a href="dummyJSP">click here</a> (href="dummyJSP") to redirect to another jsp. Redirected to the index.jsp in the dummyJSP folder.<br><br>
+
+<a href="dummyJSPHTML">click here</a> (href="dummyJSPHTML") to redirect to another folder having index.html and index.jsp <br><br>
+
+<a href="dummyJSPHTML/myHTMLpage.html">click here</a> (href="dummyJSPHTML/myHTMLpage.html") to redirect to another folder having myHTMLpage.html <br><br>
+
+<a href="dummyJSPHTML/myJSPpage.jsp">click here</a> (href="dummyJSPHTML/myJSPpage.jsp") to redirect to another folder having myJSPpage.jsp <br><br><br>
+
+<h1>Note</h1>
+
+<a href="dummyjsp">click here</a> (href="dummyjsp") to redirect to another jsp. Will throw error. The folder Name is casesensitive.<br><br>
+
+<a href="dummyJSPHTML/myhtmlpage.html">click here</a> (href="dummyJSPHTML/myhtmlpage.html") to redirect to another folder having myhtmlpage.html.Will throw error due to case sensitivity. <br><br>
