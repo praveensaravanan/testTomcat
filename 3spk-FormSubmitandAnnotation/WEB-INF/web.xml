@@ -1,0 +1,23 @@
+<web-app>
+
+	<servlet>
+		<servlet-name>submitTextWithGet</servlet-name>
+		<servlet-class>submitFormServletGETmethod</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>submitTextWithGet</servlet-name>
+		<url-pattern>/formExample/textSubmitGETmethod/submitTextGETmethod</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>submitTextWithPost</servlet-name>
+		<servlet-class>submitFormServletPOSTmethod</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>submitTextWithPost</servlet-name>
+		<url-pattern>/formExample/textSubmitPOSTmethod/submitTextPOSTmethod</url-pattern>
+	</servlet-mapping>
+
+</web-app>
