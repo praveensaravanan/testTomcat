@@ -1,0 +1,21 @@
+<web-app>
+
+<filter>
+   <filter-name>LogFilter</filter-name>
+   <filter-class>LogFilter</filter-class>
+   <init-param>
+      <param-name>spk-initial-filter-param</param-name>
+      <param-value>spk-initial-filter-param-value</param-value>
+   </init-param>
+   <init-param>
+      <param-name>spk-initial-filter-param2</param-name>
+      <param-value>spk-initial-filter-param2-value</param-value>
+   </init-param>
+</filter>
+
+<filter-mapping>
+   <filter-name>LogFilter</filter-name>
+   <url-pattern>/*</url-pattern>
+</filter-mapping>
+
+</web-app>
