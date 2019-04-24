@@ -19,6 +19,7 @@ public class LogFilter implements Filter
 	public void  doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain) throws java.io.IOException, ServletException
 	{
 		// Called per request which satisfies the url-pattern for this filter.
+		System.out.println("spk Inside LogFilter doFilter() starts. ");
 		String ipAddress = request.getRemoteAddr();
 		String contextPath = ((HttpServletRequest)request).getContextPath();
 		System.out.println("IP "+ ipAddress + ", Time " + new Date().toString()+"  contextPath = "+contextPath);

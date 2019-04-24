@@ -15,6 +15,13 @@ public class SecurityFilter implements Filter
 	public void  doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain) throws java.io.IOException, ServletException
 	{
 		// Called per request which satisfies the url-pattern for this filter.
+		System.out.println("spk Inside SecurityFilter doFilter() starts ");
+		Cookie[] cookies = ((HttpServletRequest)request).getCookies();
+        for (int i = 0; i < cookies.length; i++)
+		{
+            Cookie cookie = cookies[i];
+			System.out.println("cookie: "+cookie.getName()+" = "+cookie.getValue());
+        }
 		
 		System.out.println("spk Inside SecurityFilter doFilter(). Before doFilter ");
 		// Pass request back down the filter chain and to the servlet. FilterChain is must even if you have 1 filter.
