@@ -17,7 +17,7 @@ public class SecurityFilter implements Filter
 		// Called per request which satisfies the url-pattern for this filter.
 		System.out.println("spk Inside SecurityFilter doFilter() starts ");
 		Cookie[] cookies = ((HttpServletRequest)request).getCookies();
-        for (int i = 0; i < cookies.length; i++)
+        for (int i = 0; cookies!=null && i < cookies.length; i++)
 		{
             Cookie cookie = cookies[i];
 			System.out.println("cookie: "+cookie.getName()+" = "+cookie.getValue());
