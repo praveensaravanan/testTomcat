@@ -1,0 +1,61 @@
+<web-app>
+
+	<filter>
+	   <filter-name>LogFilter</filter-name>
+	   <filter-class>LogFilter</filter-class>
+	   <init-param>
+		  <param-name>spk-initial-filter-param</param-name>
+		  <param-value>spk-initial-filter-param-value</param-value>
+	   </init-param>
+	   <init-param>
+		  <param-name>spk-initial-filter-param2</param-name>
+		  <param-value>spk-initial-filter-param2-value</param-value>
+	   </init-param>
+	</filter>
+
+	<filter-mapping>
+	   <filter-name>LogFilter</filter-name>
+	   <url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+	   <filter-name>SecurityFilter</filter-name>
+	   <filter-class>SecurityFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+	   <filter-name>SecurityFilter</filter-name>
+	   <url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+	   <filter-name>JSPFilter</filter-name>
+	   <filter-class>JSPFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+	   <filter-name>JSPFilter</filter-name>
+	   <url-pattern>*.jsp</url-pattern>
+	</filter-mapping>
+	
+	<servlet>
+		<servlet-name>loginServletName</servlet-name>
+		<servlet-class>loginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>loginServletName</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>logoutServletName</servlet-name>
+		<servlet-class>logoutServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>logoutServletName</servlet-name>
+		<url-pattern>/signout</url-pattern>
+	</servlet-mapping>
+
+</web-app>
